@@ -21,9 +21,34 @@ function getData(){
             let img= document.createElement('img');
             img.setAttribute('src',item.picture.thumbnail);
             img.style.display = 'block';
-            div.appendChild(img)
+            div.appendChild(img )
             
         })
         
     })
 }
+ 
+
+//////    alternate way using xHR ///////////////////////////////
+// function getData(){
+//     output.innerHTML='';
+//     const xHR = new XMLHttpRequest();
+//     xHR.open('GET',url);
+//     xHR.responseType ='json';
+//     xHR.onload= function(){
+//         console.log("response: ",xHR.response);
+
+//         xHR.response.results.forEach(element => {
+//             let div = document.createElement('div');
+//             div.textContent=`${element.name.title}  ${element.name.first}  ${element.name.last}`;
+//             output.appendChild(div)
+
+//             let img = document.createElement('img');
+//             img.setAttribute('src',element.picture.thumbnail)
+//             img.style.display ='block';
+//             div.appendChild(img)
+//         });
+        
+//     }
+//     xHR.send();
+// }
