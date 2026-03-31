@@ -5,12 +5,27 @@ let btn = document.querySelector('button');
 
 btn.addEventListener('click',getData);
 
+//using fetch
+
+// function getData(){
+//     fetch(url).then(resp=> resp.json()).then(response=> {
+//         console.log(response);
+//         console.log(response.data.children);
+//         makeHtml(response.data.children)
+//     })
+// }
+
+
+// using xHR
+
 function getData(){
-    fetch(url).then(resp=> resp.json()).then(response=> {
-        console.log(response);
-        console.log(response.data.children);
-        makeHtml(response.data.children)
-    })
+    let xHR = new XMLHttpRequest();
+    xHR.open('GET',url);
+    xHR.responseType= "json";
+    xHR.onload = function(){
+        makeHtml(xHR.response.data.children)
+    }
+    xHR.send();
 }
 
 

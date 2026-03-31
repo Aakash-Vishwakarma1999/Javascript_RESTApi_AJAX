@@ -1,0 +1,20 @@
+{
+  "data": [
+    {
+      "firstName": "Laurence"
+      , "lastName": "Svekis"
+    }
+    , {
+      "firstName": "Bob"
+      , "lastName": "Doe"
+    }
+    , {
+      "firstName": "Larry"
+      , "lastName": "Jones"
+    }
+    , {
+      "firstName": "Linda"
+      , "lastName": "Smith"
+    }
+  ]
+}
