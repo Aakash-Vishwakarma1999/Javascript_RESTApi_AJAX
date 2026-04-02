@@ -1,0 +1,23 @@
+[
+  {
+    "question": "What color is the grass",
+    "answer": "green",
+    "opt": [
+      "red", "yellow", "pink"
+    ]
+  },
+  {
+    "question": "What are you learning in this course",
+    "answer": "JavaScript",
+    "opt": [
+      "HTML", "CSS", "Java"
+    ]
+  },
+  {
+    "question": "Do you like this course",
+    "answer": "Yes",
+    "opt": [
+      "No"
+    ]
+  }
+]
